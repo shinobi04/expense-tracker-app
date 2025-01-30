@@ -75,7 +75,7 @@ class _NewExpenseState extends State<NewExpense> {
             decoration: InputDecoration(
               label: Text("Title"),
               border:
-                  OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
             ),
           ),
           Row(
@@ -88,7 +88,7 @@ class _NewExpenseState extends State<NewExpense> {
                     prefixText: "₹ ",
                     label: Text("Value"),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
+                      borderRadius: BorderRadius.circular(25),
                     ),
                   ),
                 ),
@@ -142,6 +142,9 @@ class _NewExpenseState extends State<NewExpense> {
               ElevatedButton(
                 onPressed: _submitExpense,
                 child: Text("Save"),
+              ),
+              SizedBox(
+                width: 10,
               ),
               ElevatedButton(
                 onPressed: () {
